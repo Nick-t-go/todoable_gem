@@ -1,0 +1,131 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/authenticate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic bmlja3RlYWNoODg4QGdtYWlsLmNvbTp0b2RvYWJsZQ==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Mar 2019 17:50:19 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '88'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d73c3960ab2e3ae9d8fa715117b95eb1b1552067418; expires=Sat, 07-Mar-20
+        17:50:18 GMT; path=/; domain=.teachable.tech; HttpOnly
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - C24D7FEBF10442FC87995535D49FC95E
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b46a6957d469236-EWR
+    body:
+      encoding: UTF-8
+      string: '{"token":"eeaf6473-fc70-4cd8-bb38-6051d01bb223","expires_at":"2019-03-08T18:10:19.047Z"}'
+    http_version: 
+  recorded_at: Fri, 08 Mar 2019 17:50:19 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"rtgqjcxz"}}'
+    headers:
+      Authorization:
+      - Token token=eeaf6473-fc70-4cd8-bb38-6051d01bb223
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Fri, 08 Mar 2019 17:50:19 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '149'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dfa97e06f82e52871a87cee401e5732dc1552067419; expires=Sat, 07-Mar-20
+        17:50:19 GMT; path=/; domain=.teachable.tech; HttpOnly
+      Location:
+      - http://todoable.teachable.tech/api/lists/c8289414-7717-40ab-ab27-8fc9f50d4a39
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - F5B2F5A4B27349A7BC0E0216E36A232E
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b46a699dbe6c5de-EWR
+    body:
+      encoding: UTF-8
+      string: '{"name":"rtgqjcxz","src":"http://todoable.teachable.tech/api/lists/c8289414-7717-40ab-ab27-8fc9f50d4a39","id":"c8289414-7717-40ab-ab27-8fc9f50d4a39"}'
+    http_version: 
+  recorded_at: Fri, 08 Mar 2019 17:50:19 GMT
+- request:
+    method: get
+    uri: http://todoable.teachable.tech/api/lists/c8289414-7717-40ab-ab27-8fc9f50d4a39
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Token token=eeaf6473-fc70-4cd8-bb38-6051d01bb223
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Mar 2019 17:50:19 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '30'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d16d3aab441bfb819870e69cf188f766a1552067419; expires=Sat, 07-Mar-20
+        17:50:19 GMT; path=/; domain=.teachable.tech; HttpOnly
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - AF648FAF238249F0AB2B2757BFDC6938
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b46a69a7908ccc0-EWR
+    body:
+      encoding: UTF-8
+      string: '{"name":"rtgqjcxz","items":[]}'
+    http_version: 
+  recorded_at: Fri, 08 Mar 2019 17:50:19 GMT
+recorded_with: VCR 3.0.3
