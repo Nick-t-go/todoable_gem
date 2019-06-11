@@ -1,5 +1,4 @@
 require 'todoable/version'
-require 'todoable/food/food'
 require 'todoable/client'
 require 'HTTParty'
 
